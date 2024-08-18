@@ -1,0 +1,1348 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Varela Round", sans-serif;
+    background-color: #000;
+    cursor: url('./images/mouse.png') 16 16, auto;
+}
+
+/* .loderContainer {
+    height: 100vh;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaderImg {
+    width: 100%;
+    max-width: 100px;
+    margin-left: 20px;
+}
+
+.loader {
+    border: 6px solid #ffffff9c;
+    border-radius: 50%;
+    border-top: 6px solid #b636ff;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+.blinkDot {
+    display: flex;
+    gap: 8px;
+    color: #ffffff;
+    font-size: 8px;
+} */
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    width: 100%;
+    max-width: 44px;
+}
+
+.bgHome {
+    background-image: url("./images/bgWeb.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bgDaata {
+    background-color: #000000de;
+    width: 100%;
+    height: auto;
+    opacity: 0.95;
+}
+
+.navBarMain {
+    width: 100%;
+    background-color: #ffffff9c;
+    position: fixed;
+    z-index: 999;
+}
+
+.navContainer {
+    padding: 22px 80px;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(14px);
+}
+
+.navHeading {
+    font-size: 36px;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.navHeadinSpan {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 0.8px;
+}
+
+.LinksId {
+    display: flex;
+    align-items: center;
+    width: 89%;
+    justify-content: end;
+}
+
+.LinksId a {
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.menuLinks {
+    width: 283px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.menuLinks a {
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    max-width: 100px;
+    text-align: center;
+    transition: 0.5s ease;
+    background-color: #fff;
+    padding: 10px 5px;
+    border-radius: 20px;
+    box-shadow: 0px -1px 31px #000;
+}
+
+.LinksId a:hover {
+    scale: 0.9;
+    opacity: 0.9;
+    color: #b636ff;
+    text-shadow: 0px 0px 40px #b636ff;
+}
+
+.menuLinks a:hover {
+    scale: 0.9;
+    opacity: 0.9;
+    color: #b636ff;
+    text-shadow: 0px 0px 40px #b636ff;
+}
+
+.LinksId a.active {
+    scale: 0.9;
+    opacity: 0.9;
+    color: #b636ff;
+    text-shadow: 0px 0px 40px #b636ff;
+}
+
+.menuLinks a:active {
+    scale: 0.9;
+    opacity: 0.9;
+    color: #b636ff;
+    text-shadow: 0px 0px 40px #b636ff;
+}
+
+.MyProfileBg {
+    background-color: #ffffff9c;
+    width: 40%;
+    padding: 100px 30px;
+    position: relative;
+    border-radius: 0 20px 20px 0;
+    transform: translateX(-570px);
+}
+
+.homeContainer {
+    padding-top: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.appLinks {
+    width: 326px;
+    background-color: black;
+    opacity: 0.8;
+    padding: 10px 10px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 4%;
+}
+
+.appLinks a {
+    text-decoration: none;
+    color: #ffffff9c;
+    font-weight: 500;
+    transition: 0.5s ease;
+    padding: 0 20px;
+}
+
+.appLinks a:hover {
+    transform: translateY(-6px);
+}
+
+.profileImg {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.profileImg {
+    width: 100%;
+    border-radius: 100%;
+    max-width: 364px;
+    margin: 0 auto;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.MyProfileBg:hover .profileImg {
+    background-color: #000000;
+    box-shadow: 13px 10px 16px #0009;
+}
+
+.MyProfileBg:hover .profileImg {
+    opacity: 0.6;
+}
+
+.profileData {
+    width: 60%;
+}
+
+.contactMe {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    z-index: 999;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.close {
+    background-color: #fff;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 40px;
+    right: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 62px;
+}
+
+.close svg {
+    transition: 0.5s ease;
+}
+
+.close:hover svg {
+    scale: 1.2;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.MyProfileBg:hover .contactMe {
+    opacity: 1;
+}
+
+.nameHeading {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nameHeadingDot {
+    color: #b636ff;
+}
+
+.nameParagraph {
+    margin: 0;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.resumeBtnMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumeButton {
+    padding: 17px 15px;
+    background-color: #b636ff;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 25px;
+    border: none;
+    box-shadow: 10px 4px 19px #b636ff;
+    transition: 0.5s ease;
+}
+
+.resumeButton:hover {
+    scale: 0.9;
+}
+
+.skillsContainer {
+    padding-top: 200px;
+}
+
+.skillsHeading {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.adobeSkils {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skillsDataHead {
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.progressMain {
+    border-radius: 3px;
+    overflow: visible;
+    background: #e6ecf3;
+    height: 8px;
+    width: 100%;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1)
+}
+
+.progressContainer {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.progressLine {
+    height: 8px;
+    background-color: #b636ff;
+    border-radius: 3px;
+}
+
+.progressText {
+    font-size: 20px;
+    font-weight: 500;
+    color: #b636ff;
+    text-shadow: 10px 4px 19px #b636ff;
+}
+
+.adobeMain {
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.adobeMainContainer {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.projectsContainer {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.projectMain {
+    padding-inline: 40px;
+}
+
+.projectsHeading {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pojectBg {
+    background-color: #e6ecf3;
+    width: 100%;
+    max-width: 300px;
+    height: 275px;
+    border-radius: 20px;
+    box-shadow: 14px 1px 20px #ffffff;
+    overflow: hidden;
+}
+
+.pojectBg a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.projectImgBg {
+    background-image: url("./images/window.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.projectImgBg:hover {
+    scale: 1.1;
+}
+
+.projectImgBg2 {
+    background-image: url("./images/rocket.png");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+.projectImgBg2:hover {
+    scale: 1.1;
+}
+
+.projectImgBg button {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #b636ff;
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 10px 4px 19px #b636ff;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.projectImgBg2 button {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #b636ff;
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 10px 4px 19px #b636ff;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mainProjectContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 60px;
+}
+
+.aboutMeContainer {
+    padding-top: 150px;
+}
+
+.aboutMeDataContainer {
+    width: 100%;
+    background-color: #ffffff9c;
+    position: relative;
+    margin-top: 130px;
+    overflow: hidden;
+}
+
+.aboutMeMain {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.aboutData {
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.aboutMeHeading {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.buttonAboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 0 8px;
+}
+
+.buttonHead {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 40px;
+    transition: 0.5s ease;
+    width: 100%;
+    cursor: pointer;
+    padding: 31px 0;
+    border-radius: 45px;
+}
+
+.buttonHead:hover {
+    background-color: #ffffff9c;
+    color: #b636ff;
+    box-shadow: 10px 9px 10px #1a0f20c4;
+}
+
+.buttonHead.active {
+    color: #b636ff;
+    text-shadow: 1px 9px 7px #1a0f20c4;
+}
+
+.data {
+    transition: 0.5s ease;
+    display: flex;
+    width: 100%;
+    background-color: #ffff;
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+    border-radius: 26px;
+    height: 360px;
+    padding: 40px;
+}
+
+.data div {
+    width: 100%;
+    text-align: center;
+
+}
+
+.data .dataDiv {
+    display: none;
+}
+
+.dataText {
+    font-size: 16px;
+    text-align: left;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+}
+
+.data .dataDiv.active {
+    display: block;
+    animation: data 0.3s linear forwards;
+    text-align: left;
+    overflow-y: auto;
+}
+
+.introDataSkill {
+    margin-top: 18px;
+}
+
+@keyframes data {
+    0% {
+        transform: translateY(40px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.educationYear {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+}
+
+.educationDegree {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 8px;
+    color: #000;
+}
+
+.educationDataContainer {
+    width: 50%;
+}
+
+.circleLineContainer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 15px;
+}
+
+.circleBox {
+    width: 9px !important;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #b636ff;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+}
+
+.universityName {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.uniData {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+.educationData {
+    display: flex !important;
+    gap: 10px;
+}
+
+.dataExperience {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.contactHeading {
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 62px;
+}
+
+.contactContainer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.headContact {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contactMainContainer {
+    padding-top: 150px;
+}
+
+.contctMain {
+    margin-top: 40px;
+    background-color: #ffffff9c;
+    padding: 40px;
+}
+
+.inputLabel {
+    font-size: 16px;
+    font-weight: 400;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 10px 9px 10px #1a0f20c4;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    outline: none;
+    width: 80%;
+}
+
+.textAreaMsg {
+    font-size: 16px;
+    border: none;
+    box-shadow: 10px 9px 10px #1a0f20c4;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    outline: none;
+    width: 95%;
+    text-align: left;
+    height: 200px;
+    margin-top: 20px;
+}
+
+.nameContainer {
+    width: 30%;
+    padding: 0 5px;
+}
+
+.msgContainer {
+    width: 70%;
+    padding: 0 5px;
+}
+
+.formContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.sendBtn {
+    padding: 17px 15px;
+    background-color: #b636ff;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-weight: 700;
+    border: none;
+    box-shadow: 0px 5px 39px #b636ff;
+    transition: 0.5s ease;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.sendBtn:hover {
+    scale: 0.9;
+}
+
+#overlay {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0 0 0 / 97%);
+    flex-direction: column;
+}
+
+.overlayForm {
+    border: 2px solid #b636ff;
+    width: 100%;
+    max-width: 420px;
+    height: 65%;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 58px #b636ff;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: transparent;
+}
+
+.nameoverlay {
+    font-size: 20px;
+    font-weight: 700;
+    color: #b636ff;
+}
+
+.overlayInputMain {
+    display: flex;
+    justify-content: center;
+}
+
+.overlayInput {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #b636ff;
+    background-color: transparent;
+    box-shadow: 0px 4px 22px #b636ff;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-bottom: 9px;
+    height: 50px;
+    outline: none;
+    color: #ffff;
+    font-size: 18px;
+    padding-inline: 20px;
+    border-radius: 40px;
+    max-width: 365px;
+
+}
+
+.nameoverlayTextArea {
+    background-color: transparent;
+    width: 100%;
+    max-width: 365px;
+    border: none;
+    border-bottom: 1px solid #b636ff;
+    background-color: transparent;
+    box-shadow: 0px 4px 22px #b636ff;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    height: 55px;
+    outline: none;
+    color: #ffff;
+    font-size: 18px;
+    padding-block: 16px;
+    padding-inline: 20px;
+    border-radius: 24px;
+}
+
+.overlaySubmit {
+    border: 1px solid #b636ff;
+    box-shadow: 0px 4px 55px #b636ff;
+    padding: 10px 20px;
+    outline: none;
+    color: #ffff;
+    border-radius: 24px;
+    font-size: 18px;
+    background-color: transparent;
+    width: 100%;
+    max-width: 190px;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.overlaySubmit:hover {
+    background-color: #b636ff;
+    box-shadow: 0px 4px 55px rgb(207, 155, 155);
+}
+
+.orContactUs {
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ouremail {
+    font-size: 22px;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s ease;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ouremail:hover {
+    color: #b636ff;
+    text-shadow: 0 0 55px #b636ff;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.containeMenu {
+    display: none;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 110%;
+}
+
+.menu {
+    position: relative;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    right: -56px;
+}
+
+.profileImgMObile {
+    display: none;
+}
+
+.phoneMainContainer {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.phoneno {
+    padding: 15px 18px;
+    background-color: white;
+    border-radius: 42px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.borderLine {
+    background-color: black;
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.ouremailFooter {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 18px;
+    background-color: white;
+    border-radius: 40px;
+    color: black;
+}
+
+.contactusDirectFooter {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+.scroll::-webkit-scrollbar-thumb {
+    background: #b636ff;
+    border-radius: 10px;
+    box-shadow: 0 0 40px #b636ff;
+}
+
+/* Handle on hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #b636ff;
+    box-shadow: 0 0 40px #b636ff;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b636ff;
+    border-radius: 10px;
+    box-shadow: 0 0 40px #b636ff;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b636ff;
+    box-shadow: 0 0 40px #b636ff;
+}
+
+.footerAppLink {
+    display: flex;
+    gap: 10px;
+}
+
+.footerAppLink a {
+    padding: 0 10px;
+    transition: 0.5s ease;
+}
+
+.footerAppLink a:hover {
+    scale: 0.8;
+}
+
+.LinksId a {
+    transform: translateY(-40px);
+    opacity: 0;
+}
+
+.profileData .homeAnimate {
+    transform: translateY(40px);
+    opacity: 0;
+}
+
+.linksMobile {
+    display: none;
+    padding: 10px 15px;
+    background-color: #2e2e2eb4;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 50%;
+}
+
+.uiAnimate {
+    animation: typing 2.5s steps(19),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .containeMenu {
+        display: block;
+    }
+
+    .LinksId {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .MyProfileBg {
+        display: none;
+    }
+
+    .profileImg:hover .contactMe {
+        opacity: 0.8;
+        backdrop-filter: blur(26px);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        top: 0;
+        box-shadow: 31px 0px 57px #b636ff;
+    }
+
+    .profileImgMObile {
+        display: block;
+    }
+
+    .contactMe {
+        color: #b636ff;
+        text-shadow: 0px 0px 56px #b636ff;
+    }
+
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profileImg {
+        max-width: 218px;
+    }
+
+    .nameHeading {
+        font-size: 42px;
+    }
+
+    .nameParagraph {
+        margin-top: 25px;
+        font-size: 18px;
+    }
+
+    .skillsDataHead {
+        font-size: 18px;
+    }
+
+    .skillsHeading {
+        font-size: 32px;
+    }
+
+    .projectsHeading {
+        font-size: 32px;
+    }
+
+    .aboutMeHeading {
+        font-size: 32px;
+    }
+
+    .aboutData {
+        flex-direction: column;
+    }
+
+    .buttonAboutMe {
+        flex-direction: unset;
+        width: 100%;
+    }
+
+    .buttonHead {
+        margin-bottom: 6px;
+    }
+
+    .data {
+        overflow-y: auto;
+    }
+
+    .aboutMeDataContainer {
+        margin-top: 72px;
+    }
+
+    .contactMainContainer {
+        margin-top: 70px;
+    }
+
+    .contactHeading {
+        font-size: 32px;
+    }
+
+    .formContainer {
+        flex-wrap: wrap;
+    }
+
+    .nameContainer {
+        width: 100%;
+    }
+
+    .msgContainer {
+        width: 100%;
+    }
+
+    .linksMobile {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navContainer {
+        padding: 22px 28px;
+    }
+
+    .nameHeading {
+        font-size: 32px;
+    }
+
+    .profileData {
+        width: 80%;
+    }
+
+    .skillsContainer {
+        padding-top: 150px;
+    }
+
+    .adobeMainContainer {
+        display: block;
+    }
+
+    .adobeMainContainer {
+        padding: 0 20px;
+    }
+
+    .adobeSkils {
+        width: 100%
+    }
+
+    .projectMain {
+        padding: 0 20px;
+    }
+
+    .aboutData {
+        padding: 20px;
+    }
+
+    .data {
+        width: auto;
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+
+    .educationDegree {
+        font-size: 14px;
+    }
+
+    .buttonAboutMe {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttonHead {
+        width: 50%;
+        padding: 16px 0;
+    }
+
+    .universityName {
+        font-size: 20px;
+    }
+
+    .uniData {
+        font-size: 14px;
+    }
+
+    .contactHeading {
+        padding: 0;
+    }
+
+    .contactMainContainer {
+        margin: 0;
+    }
+
+    .textAreaMsg {
+        width: 90%;
+    }
+
+    #overlay {
+        display: none !important;
+    }
+
+    .contactMe {
+        display: none;
+    }
+
+    .profileImg:hover .contactMe {
+        display: none;
+    }
+
+    .contctMain {
+        padding: 20px;
+    }
+
+    .contactusDirectFooter {
+        font-size: 16px;
+    }
+
+    .phoneno {
+        font-size: 16px;
+    }
+
+    .borderLine {
+        margin-top: 43px;
+        width: 100%;
+    }
+
+    .ouremailFooter {
+        font-size: 16px;
+    }
+
+    .navHeading {
+        font-size: 28px;
+    }
+
+    .navHeadinSpan {
+        font-size: 16px;
+    }
+}

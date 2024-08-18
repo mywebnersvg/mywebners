@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webners</title>
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="shortcut icon" type="x-icon" href="./images/mywebners.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="bgHome">
+        <div class="bgDaata">
+            <!-- <div class="loderContainer">
+                <div class="loader"></div>
+                <img src="./images/mywebners.png" alt="logo" class="loaderImg" />
+            </div> -->
+            <nav class="navBarMain">
+                <div class="navContainer">
+                    <div style="display: flex; gap: 10px; cursor: pointer;" onclick="refresh()">
+                        <img src="./images/mywebners.png" alt="logo" class="logo" />
+                        <h1 class="navHeading">
+                            MY
+                            <span class="navHeadinSpan"> Webners</span>
+                        </h1>
+                    </div>
+                    <div class="LinksId">
+                        <a href="#home">
+                            Home
+                        </a>
+                        <a href="#skills">
+                            Skills
+                        </a>
+                        <a href="#projects">
+                            Portfolio
+                        </a>
+                        <a href="#about">
+                            About Me
+                        </a>
+                        <a href="#contact">
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <div class="containeMenu" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
+                        <div id="myDropdown" class=" dropdownMenu hide">
+                            <div class="menuLinks">
+                                <a href="#home">
+                                    Home
+                                </a>
+                                <a href="#skills">
+                                    Skills
+                                </a>
+                                <a href="#projects">
+                                    Portfolio
+                                </a>
+                                <a href="#about">
+                                    About Me
+                                </a>
+                                <a href="#contact">
+                                    Contact Me
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="homeContainer" id="home">
+                <div class="MyProfileBg">
+                    <div class="appLinks">
+                        <a target="_blank" href="https://www.instagram.com/mywebners/">
+                            <img src="./images/instagram.png" alt="Instagram" />
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/anassheikh829/">
+                            <img src="./images/linkedin.png" alt="LinkIn" />
+                        </a>
+                        <a target="_blank" href="https://github.com/mywebnersvg">
+                            <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32"
+                                data-view-component="true" fill="white" class="octicon octicon-mark-github">
+                                <path
+                                    d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61564115706359">
+                            <img src="./images/facebook.png" alt="facebook" />
+                        </a>
+                        <a target="_blank" href="https://x.com/mywebners?s=09">
+                            <img src="./images/twitter-x.png" alt="Twitter" />
+                        </a>
+                    </div>
+                    <div class="profileImg">
+                        <img src="./images/profileImg.png" alt="profileImg" class="profileImg" onclick="on()" />
+                        <p class="contactMe" onclick="on()">
+                            Contact Me...
+                        </p>
+                    </div>
+
+                </div>
+                <div class="profileImgMObile">
+                    <div class="profileImg">
+                        <img src="./images/profileImg.png" alt="profileImg" class="profileImg" onclick="on()" />
+                        <p class="contactMe" onclick="on()">
+                            Contact Me...
+                        </p>
+                    </div>
+                </div>
+                <div class="profileData">
+                    <h1 class="nameHeading homeAnimate">
+                        Hi, I am
+                        <br>
+                        ANAS Sheikh<span class="nameHeadingDot">.</span>
+                    </h1>
+                    <p class="nameParagraph" id="element">
+                        
+                    </p>
+                    <div class="resumeBtnMain homeAnimate">
+                        <a href="./images/Black Modern Professional Resume.pdf" download="Resume">
+                            <button type="button" class="resumeButton">
+                                Download Resume
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="skillsContainer" id="skills">
+                <h2 class="skillsHeading">
+                    SKILLS
+                </h2>
+                <div class="adobeMain">
+                    <div class="adobeMainContainer">
+                        <div class="adobeSkils">
+                            <div>
+                                <h3 class="skillsDataHead">HTML 5</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent98" style="width: 98%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        98%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">CSS 3 Animation</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent99"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        99%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">JavaScript</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent95" style="width: 95%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        95%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">Tailwind CSS</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent98" style="width: 98%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        98%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">SCSS</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent97" style="width: 97%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        97%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">Bootstrap</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent96" style="width: 96%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        96%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="adobeSkils">
+                            <div>
+                                <h3 class="skillsDataHead">React UI</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent98" style="width: 98%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        98%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">Creativity</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent90" style="width: 90%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        90%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">Creativity</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent90" style="width: 90%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        90%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">Communication</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent96" style="width: 96%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        96%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">adobe photoshop</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent85" style="width: 85%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        85%
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="skillsDataHead">adobe illustrator</h3>
+                                <div class="progressContainer">
+                                    <div class="progressMain">
+                                        <div class="progressLine percent88" style="width: 88%;"></div>
+                                    </div>
+                                    <p class="progressText">
+                                        88%
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectsContainer" id="projects">
+                <div class="projectMain">
+                    <h2 class="projectsHeading">
+                        Portfolio
+                    </h2>
+                    <div class="mainProjectContainer">
+                        <div class="pojectBg">
+                            <a target="_blank" href="https://mywebners.github.io/Spaced/" target="_blank">
+                                <div class="projectImgBg">
+                                    <button type="button">
+                                        Click Me...
+                                    </button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pojectBg">
+                            <a target="_blank" href="https://mywebners829.github.io/humana-studio/" target="_blank">
+                                <div class="projectImgBg2">
+                                    <button type="button">Click Me...</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="aboutMeContainer" id="about">
+
+                <h2 class="aboutMeHeading">
+                    About Me
+                </h2>
+                <div class="aboutMe">
+                    <div class="aboutMeDataContainer">
+                        <div class="aboutMeMain">
+
+                            <div class="aboutData">
+                                <div class="buttonAboutMe">
+                                    <button onclick="showSection('intro', this)" class="buttonHead active">
+                                        INTRO
+                                    </button>
+                                    <button onclick="showSection('education', this)" class="buttonHead">
+                                        EDUCATION
+                                    </button>
+                                    <button onclick="showSection('experience', this)" class="buttonHead">
+                                        EXPERIENCE
+                                    </button>
+                                </div>
+                                <div class="data">
+                                    <div id="introData" class="active dataDiv scroll">
+                                        <p style="font-style: italic;">
+                                            Hello, my name is Anas Sheikh. I am a professional UI/UX designer and web
+                                            developer with a strong commitment to creating exceptional digital
+                                            experiences. With a solid foundation in both design and development, I
+                                            specialize in transforming complex ideas into intuitive, user-friendly
+                                            interfaces.
+                                        </p>
+                                        <p class="introDataSkill">
+                                            <span style="font-size: 30px; font-weight: 700;">"</span>My technical
+                                            skills encompass a wide range of technologies, including HTML,
+                                            CSS, Bootstrap, Tailwind, React UI, Material UI, JavaScript, and TypeScript.
+                                            I leverage these tools to build responsive and accessible websites that not
+                                            only look great but also function seamlessly across various devices and
+                                            platforms.
+                                        </p>
+                                        <p class="introDataSkill">
+                                            In addition to my development skills, I have a keen eye for design and am
+                                            proficient in creating dynamic website animations. These animations enhance
+                                            user engagement and contribute to a more interactive and enjoyable browsing
+                                            experience.<span style="font-size: 30px; font-weight: 700;">"</span>
+                                        </p>
+                                        <p class="introDataSkill" style="font-style: italic;">
+                                            I am excited about the opportunity to collaborate with diverse teams and
+                                            contribute to innovative projects that push the boundaries of design and
+                                            technology.
+                                        </p>
+                                    </div>
+
+                                    <div id="educationData" class="dataDiv scroll">
+                                        <div class="educationData">
+                                            <section class="dataText educationDataContainer">
+                                                <p class="educationYear">2020-2023</p>
+                                                <p class="educationDegree">
+                                                    Bachelor of Computer Science
+                                                </p>
+                                                <div class="circleLineContainer">
+                                                    <div class="circleBox"></div>
+                                                    <div class="line"></div>
+                                                </div>
+                                                <h2 class="universityName">
+                                                    University of Punjab
+                                                </h2>
+                                                <p class="uniData">
+                                                    One of the oldest and most prestigious universities in Pakistan,
+                                                    offering a range of undergraduate and postgraduate programs.
+                                                </p>
+                                                <p class="uniData">
+                                                    This program typically covers fundamental and advanced topics in
+                                                    computer science, including programming, data structures,
+                                                    algorithms,
+                                                    software engineering, databases, and web development.
+                                                </p>
+                                            </section>
+                                            <section class="dataText educationDataContainer">
+                                                <p class="educationYear">2019-2022</p>
+                                                <p class="educationDegree">
+                                                    Bachelor of Creative Design
+                                                </p>
+                                                <div class="circleLineContainer">
+                                                    <div class="circleBox"></div>
+                                                    <div class="line"></div>
+                                                </div>
+                                                <h2 class="universityName">
+                                                    University of South Asia
+                                                </h2>
+                                                <p class="uniData">
+                                                    my studies in Creative Design have honed my skills in visual
+                                                    communication, user experience design, and creativity, enabling me
+                                                    to
+                                                    approach projects with a unique blend of technical expertise and
+                                                    artistic vision.
+                                                </p>
+                                                <p class="uniData">
+                                                    This diverse academic background empowers me to excel in
+                                                    interdisciplinary environments, where I can leverage both analytical
+                                                    and
+                                                    creative thinking to produce impactful designs and applications.
+                                                </p>
+                                            </section>
+                                        </div>
+                                    </div>
+                                    <div id="experienceData" class="dataDiv dataExperience scroll">
+                                        With four enriching years at Celestials Technologies, I have established myself
+                                        as a passionate and innovative front-end developer, dedicated to transforming
+                                        ideas into captivating online experiences. My journey has been marked by a
+                                        commitment to excellence, as I meticulously craft intuitive and visually
+                                        stunning web applications that resonate with clients and users alike. Each
+                                        project I undertake is approached with a blend of creativity and technical
+                                        expertise, allowing me to translate complex requirements into seamless digital
+                                        solutions. I thrive in collaborative environments, fostering strong
+                                        relationships with clients to ensure their visions come to life. My deep
+                                        understanding of the latest front-end technologies empowers me to deliver
+                                        exceptional results, while my unwavering attention to detail guarantees that
+                                        every element aligns with the highest standards of quality. Driven by a desire
+                                        for continuous improvement, I remain at the forefront of industry trends, always
+                                        seeking to elevate my work and exceed expectations.
+                                        <div class="resumeBtnMain">
+                                            <a href="./images/Black Modern Professional Resume.pdf" download="Resume">
+                                                <button type="button" class="resumeButton" style="margin-top: 2px;">
+                                                    Download Resume
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="contactMainContainer" id="contact">
+                <h2 class="contactHeading">
+                    Contact
+                </h2>
+                <div class="contctMain">
+                    <div class="contactContainer">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="f82ec1a9-221c-4931-9f93-74f56c8bea80">
+                            <div class="formContainer">
+                                <div class="nameContainer">
+                                    <label class="headContact">Name</label>
+                                    <div>
+                                        <input type="text" name="name" class="inputLabel animateInput"
+                                            placeholder="Name..." required>
+                                    </div>
+                                    <label class="headContact">Email</label>
+                                    <div>
+                                        <input type="email" name="email" class="inputLabel animateInput"
+                                            placeholder="Email..." required>
+                                    </div>
+
+                                </div>
+                                <div class="msgContainer">
+                                    <label class="headContact">Message</label>
+                                    <textarea class="textAreaMsg animateInput" rows="4" cols="50" name="comment"
+                                        placeholder="Your message..." required></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="sendBtn">Send</button>
+                            <div class="phoneMainContainer">
+                                <p class="contactusDirectFooter">Or contact us diectly</p>
+                                <div
+                                    style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: 14px;">
+                                    <div class="phoneno">923259722503</div>
+
+                                    <div style="text-align: center;">
+                                        <a target="_blank"
+                                            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
+                                            class="ouremailFooter">
+                                            mywebners@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="borderLine"></div>
+                                <div class="footerAppLink">
+                                    <a target="_blank" href="https://www.instagram.com/mywebners/">
+                                        <img src="./images/instagram.png" alt="Instagram" />
+                                    </a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/anassheikh829/">
+                                        <img src="./images/linkedin.png" alt="LinkIn" />
+
+                                    </a>
+                                    <a target="_blank" href="https://github.com/mywebnersvg">
+                                        <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32"
+                                            data-view-component="true" fill="black" class="octicon octicon-mark-github">
+                                            <path
+                                                d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a target="_blank" href="https://www.facebook.com/profile.php?id=61564115706359">
+                                        <img src="./images/facebook.png" alt="facebook" />
+                                    </a>
+                                    <a target="_blank" href="https://x.com/mywebners?s=09">
+                                        <img src="./images/twitter-x.png" alt="Twitter" />
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="overlay">
+        <form action="https://api.web3forms.com/submit" method="POST" class="overlayForm scroll">
+            <input type="hidden" name="access_key" value="f82ec1a9-221c-4931-9f93-74f56c8bea80">
+            <label class="nameoverlay">
+                Name
+            </label>
+            <div class="overlayInputMain">
+                <input type="text" class="overlayInput">
+            </div>
+            <label class="nameoverlay">
+                Email
+            </label>
+            <div class="overlayInputMain">
+                <input type="email" class="overlayInput">
+            </div>
+
+            <label class="nameoverlay">Message</label>
+            <div class="overlayInputMain">
+                <textarea class="nameoverlayTextArea" rows="4" cols="50" name="comment" required></textarea>
+            </div>
+            <div class="overlayInputMain">
+                <button type="submit" class="overlaySubmit">Send
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#b636ff" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" width="24px" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                    </svg>
+
+                </button>
+            </div>
+        </form>
+        <div>
+            <p class="orContactUs">
+                Or Contact us directly
+            </p>
+            <div style="text-align: center;">
+                <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new"
+                    class="ouremail">
+                    mywebners@gmail.com
+                </a>
+            </div>
+        </div>
+        <div class="close" onclick="off()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="#f10000"
+                width="20px" height="20px" class="">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+        </div>
+    </div>
+    <div class="linksMobile">
+        <a target="_blank" href="https://www.instagram.com/mywebners/">
+            <img src="./images/instagram.png" alt="Instagram" />
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/anassheikh829/">
+            <img src="./images/linkedin.png" alt="LinkIn" />
+
+        </a>
+        <a target="_blank" href="https://github.com/mywebnersvg">
+            <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true"
+                fill="black" class="octicon octicon-mark-github">
+                <path
+                    d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
+                </path>
+            </svg>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=61564115706359">
+            <img src="./images/facebook.png" alt="facebook" />
+        </a>
+        <a target="_blank" href="https://x.com/mywebners?s=09">
+            <img src="./images/twitter-x.png" alt="Twitter" />
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['ui/ux designer and web developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
